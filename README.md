@@ -21,7 +21,7 @@
   &nbsp;|
   <a href="https://huggingface.co/spaces/XiaomiMiMo/MiMo-V2.5-ASR" target="_blank">🚀 Online Demo</a>
   &nbsp;|
-  <a href="https://xiaomimimo.github.io/MiMo-V2.5-ASR-Demo" target="_blank">📰 Blog</a>
+  <a href="https://mimo.xiaomi.com/mimo-v2-5-asr" target="_blank">📰 Blog</a>
   &nbsp;|
 
   <br/>
@@ -52,7 +52,7 @@ MiMo-V2.5-ASR has been evaluated across a broad set of benchmarks spanning stand
 
 ![Results](assets/MiMo_ASR_Results.png)
 
-For per-benchmark numbers and specific qualitative cases, please refer to our [blog](https://xiaomimimo.github.io/MiMo-V2.5-ASR-Demo).
+For per-benchmark numbers and specific qualitative cases, please refer to our [blog](https://mimo.xiaomi.com/mimo-v2-5-asr).
 
 ## Model Download
 
