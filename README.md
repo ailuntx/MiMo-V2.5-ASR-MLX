@@ -50,7 +50,7 @@ Automatic speech recognition systems are expected to faithfully transcribe speec
 
 MiMo-V2.5-ASR has been evaluated across a broad set of benchmarks spanning standard Mandarin and English, Chinese dialects, lyric recognition, and internal business scenarios. The chart below summarizes the average performance of MiMo-V2.5-ASR across these scenarios.
 
-![Results](assets/Results.png)
+![Results](assets/MiMo_ASR_Results.png)
 
 For per-benchmark numbers and specific qualitative cases, please refer to our [blog](https://xiaomimimo.github.io/MiMo-V2.5-ASR-Demo).
 
