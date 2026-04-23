@@ -35,15 +35,16 @@
 
 ## Abstract
 
-Automatic speech recognition systems are expected to faithfully transcribe speech signals that originate from diverse languages, dialects, accents, and domains, and that are captured under a wide variety of acoustic conditions. While conventional end-to-end models perform well on in-domain data, they still fall short of real-world requirements in challenging scenarios such as dialect mixing, code-switching, knowledge-intensive content, noisy environments, and multi-speaker conversations. We present **MiMo-V2.5-ASR**, a large-scale end-to-end speech recognition model developed by the Xiaomi MiMo team. Through large-scale mid-training, high-quality supervised fine-tuning, and a novel reinforcement-learning algorithm, MiMo-V2.5-ASR achieves systematic improvements along the following dimensions:
+Automatic speech recognition systems are expected to faithfully transcribe speech signals that originate from diverse languages, dialects, accents, and domains, and that are captured under a wide variety of acoustic conditions. While conventional end-to-end models perform well on in-domain data, they still fall short of real-world requirements in challenging scenarios such as dialect mixing, code-switching, knowledge-intensive content, noisy environments, and multi-speaker conversations. Therefore, we present **MiMo-V2.5-ASR**, an end-to-end speech recognition model developed by the Xiaomi MiMo team. Through large-scale mid-training, high-quality supervised fine-tuning, and a novel reinforcement-learning algorithm, MiMo-V2.5-ASR achieves systematic improvements along the following dimensions:
 
-- 🗣️ **Chinese Dialects**: Native support for Wu, Min-nan, Cantonese, Sichuanese, and other major Chinese dialects.
-- 🔀 **Code-Switch**: Fluent transcription of Chinese–English code-switched speech without any language tag prompting.
-- 🎵 **Song Lyrics**: Accurate lyric transcription for both Chinese and English songs, even when vocals are mixed with accompaniment.
-- 🔊 **Noisy Conditions**: Robust recognition in high-noise and far-field environments.
-- 👥 **Multi-Speaker**: Accurate transcription of overlapping and cross-talk conversations, such as meeting scenarios.
-- 🇬🇧 **Complex English Scenarios**: Leading performance among non-English-only models on English multi-speaker meeting benchmarks such as AMI.
-- 📚 **Knowledge-Intensive Recognition**: Precise recognition of classical poetry, technical terminology, and named entities (people, places, organizations).
+- 🗣️ **Chinese Dialects**: Native support for Wu, Cantonese, Hokkien, Sichuanese, and more.
+- 🔀 **Code-Switch**: Seamless Chinese–English code-switching transcription with no language tags required.
+- 🎵 **Song Recognition**: High-precision lyrics transcription for Chinese and English songs, even with mixed accompaniment and vocals.
+- 🔊 **Noisy Environments**: Robust recognition under heavy noise, far-field capture, and other adverse acoustic conditions.
+- 👥 **Multi-Speaker**: Accurate transcription of overlapping, multi-party conversations such as meetings.
+- 🇬🇧 **Complex English Scenarios**: Leading performance on the Open ASR Leaderboard for challenging English benchmarks such as AMI.
+- 📚 **Knowledge-Intensive Recognition**: Precise recognition of classical poetry, technical terminology, personal names, place names, and other knowledge-dense material.
+- 📝 **Native Punctuation**: Punctuation generated natively from prosody and semantics, delivering ready-to-use transcripts with no post-processing needed.
 
 ## Results
 
