@@ -17,7 +17,7 @@
 
 <div align="center" style="line-height: 1;">
   |
-  <a href="https://huggingface.co/collections/XiaomiMiMo/mimo-v2.5-asr" target="_blank">🤗 HuggingFace</a>
+  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-ASR" target="_blank">🤗 HuggingFace</a>
   &nbsp;|
   <a href="https://huggingface.co/spaces/XiaomiMiMo/MiMo-V2.5-ASR" target="_blank">🚀 Online Demo</a>
   &nbsp;|
