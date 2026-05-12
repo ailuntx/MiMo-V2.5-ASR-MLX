@@ -60,6 +60,8 @@ For per-benchmark numbers and specific qualitative cases, please refer to our [b
 |-------|-------|
 | MiMo-Audio-Tokenizer | [XiaomiMiMo/MiMo-Audio-Tokenizer](https://huggingface.co/XiaomiMiMo/MiMo-Audio-Tokenizer) |
 | MiMo-V2.5-ASR | [XiaomiMiMo/MiMo-V2.5-ASR](https://huggingface.co/XiaomiMiMo/MiMo-V2.5-ASR) |
+| MiMo-Audio-Tokenizer (MLX) | [mlx-community/MiMo-Audio-Tokenizer](https://huggingface.co/mlx-community/MiMo-Audio-Tokenizer) |
+| MiMo-V2.5-ASR (MLX) | [mlx-community/MiMo-V2.5-ASR-MLX](https://huggingface.co/mlx-community/MiMo-V2.5-ASR-MLX) |
 
 ```bash
 pip install huggingface-hub
@@ -67,6 +69,45 @@ pip install huggingface-hub
 hf download XiaomiMiMo/MiMo-Audio-Tokenizer --local-dir ./models/MiMo-Audio-Tokenizer
 hf download XiaomiMiMo/MiMo-V2.5-ASR --local-dir ./models/MiMo-V2.5-ASR
 ```
+
+## MLX Usage (Apple Silicon)
+
+This repo also tracks an MLX path for Apple Silicon. The current integration lives on top of the MiMo support branch in `mlx-audio`:
+
+```bash
+pip install -r requirements-mlx.txt
+```
+
+Download the MLX checkpoints:
+
+```bash
+hf download mlx-community/MiMo-Audio-Tokenizer --local-dir ./models/MiMo-Audio-Tokenizer
+hf download mlx-community/MiMo-V2.5-ASR-MLX --local-dir ./models/MiMo-V2.5-ASR-MLX
+```
+
+Run a transcription:
+
+```bash
+python run_mimo_asr_mlx.py \
+    --model ./models/MiMo-V2.5-ASR-MLX \
+    --audio path/to/audio.wav
+```
+
+Python API:
+
+```python
+from mlx_audio.stt import load
+
+model = load("./models/MiMo-V2.5-ASR-MLX")
+result = model.generate("path/to/audio.wav", language="en")
+print(result.text)
+```
+
+Notes:
+
+- `mlx-community/MiMo-V2.5-ASR-MLX` resolves `mlx-community/MiMo-Audio-Tokenizer` through `mlx_manifest.json`.
+- If you keep both directories locally, you can also pass `--audio-tokenizer-dir ./models/MiMo-Audio-Tokenizer`.
+- This path will be updated to the upstream `mlx-audio` release once MiMo support is merged there.
 
 ## Getting Started
 
