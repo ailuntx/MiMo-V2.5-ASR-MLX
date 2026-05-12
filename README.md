@@ -122,7 +122,7 @@ Spin up the MiMo-V2.5-ASR demo in minutes with the built-in Gradio app.
 
 ```bash
 git clone https://github.com/XiaomiMiMo/MiMo-V2.5-ASR.git
-cd MiMo-V2.5-ASR
+cd MiMo-V2.5-ASR-MLX
 pip install -r requirements.txt
 pip install flash-attn==2.7.4.post1
 ```
