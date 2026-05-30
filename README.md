@@ -72,7 +72,7 @@ hf download XiaomiMiMo/MiMo-V2.5-ASR --local-dir ./models/MiMo-V2.5-ASR
 
 ## MLX Usage (Apple Silicon)
 
-This repo also tracks an MLX path for Apple Silicon. The current integration lives on top of the MiMo support branch in `mlx-audio`:
+This repo also tracks an MLX path for Apple Silicon. The current integration uses `ailuntx/mlx-audio` main, which includes MiMo support:
 
 ```bash
 pip install -r requirements-mlx.txt
